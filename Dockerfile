@@ -3,7 +3,7 @@ USER root
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
         python3 python3-pip python3-venv python3-dev \
-        curl wget git sudo htop screen build-essential && \
+        curl wget git sudo htop nano screen build-essential && \
     # Alias 'python' agar kompatibel dengan script/tutorial umum
     ln -sf /usr/bin/python3 /usr/bin/python && \
     # Upgrade pip & hapus cache agar image tetap kecil
